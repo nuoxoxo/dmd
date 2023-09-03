@@ -9,6 +9,9 @@ const App = () => {
   const [GuessRes, setGuessRes] = useState<string>('');
 
   const EvaluateGuess = (val: number) => {
+    if (val === 7) {
+      val = 0
+    }
     if (val === RandomDateArray[0]) {
       setGuessRes('yes')
     } else {
