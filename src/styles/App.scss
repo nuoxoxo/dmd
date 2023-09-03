@@ -19,8 +19,10 @@ body {
 }
 
 input {
+  width: 66px;
   height: $TXT-SIZE;
-  font-size: calc($TXT-SIZE - 10px)
+  font-size: calc($TXT-SIZE - 10px);
+
 }
 
 .GuessingDiv {
