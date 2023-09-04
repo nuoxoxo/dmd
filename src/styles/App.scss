@@ -15,7 +15,7 @@ body {
   background-color: $GB;
   color: $TXT;
   font-size: $TXT-SIZE;
-  @include FlexBody(); 
+  @include GridBody(); 
 }
 
 input {
