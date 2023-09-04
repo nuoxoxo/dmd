@@ -4,7 +4,7 @@ $TXT-SIZE: 42px;
 
 @mixin FlexBody {
   display: flex;
-  flex-direction: column
+  flex-direction: row
 }
 
 @mixin GridBody {
@@ -15,7 +15,7 @@ body {
   background-color: $GB;
   color: $TXT;
   font-size: $TXT-SIZE;
-  @include GridBody(); 
+  @include FlexBody(); 
 }
 
 input {
