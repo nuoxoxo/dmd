@@ -22,6 +22,7 @@ body {
   color: $TXT;
   font-size: $TXT-SIZE;
   @include FlexBody(); 
+  user-select: none;
 }
 
 input {
