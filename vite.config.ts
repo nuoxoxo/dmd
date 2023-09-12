@@ -16,11 +16,9 @@ export default defineConfig(({ command }) => {
     base: '/',
   }
 
-  /*
   if (command !== 'serve') {
     config.base = '/dmd'
   }
-  */
 
   return config
 })
