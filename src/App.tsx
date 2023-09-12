@@ -28,7 +28,7 @@ const App = () => {
       setGuessRes(false)
     }
     document.body.style.backgroundColor = GuessRes ? 'green' : 'red';
-    console.log(document.body.style.backgroundColor, GuessRes)
+    // console.log(document.body.style.backgroundColor, GuessRes)
   }
 
   /*
@@ -73,7 +73,7 @@ const App = () => {
 
     //  Night mode switch
     const temp_color = document.body.style.backgroundColor
-    console.log(temp_color)
+    // console.log(temp_color)
     if ( !temp_color || temp_color == 'white' || temp_color == 'black') {
       document.body.style.backgroundColor = LabelIsChecked ? 'white' : 'black';
       document.body.style.color = LabelIsChecked ? 'black' : 'white';
