@@ -22,11 +22,14 @@ const App = () => {
     if (val === 7) {
       val = 0
     }
-    if (val === RandomDateArray[0]) {
-      setGuessRes(true)
-    } else {
-      setGuessRes(false)
-    }
+    console.log(val, RandomDateArray[0], val === RandomDateArray[0], GuessRes)
+    // if (val === RandomDateArray[0]) {
+    //   setGuessRes(true)
+    // } else {
+    //   setGuessRes(false)
+    // }
+    setGuessRes(val === RandomDateArray[0] + 1)
+    console.log(val, RandomDateArray[0], val === RandomDateArray[0], GuessRes)
     document.body.style.backgroundColor = GuessRes ? 'green' : 'red';
     // console.log(document.body.style.backgroundColor, GuessRes)
   }
