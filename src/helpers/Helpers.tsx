@@ -13,7 +13,7 @@ export const GetRandomDateString = (): [number, string, number, number] => {
   //   'Sunday', 'Monday', 'Tuesday', 
   //   'Wednesday', 'Thursday', 'Friday', 'Saturday'
   // ]
-  console.log(RandomTime)
+  // console.log(RandomTime)
 
   return [
     RandomTime.getDay(),
