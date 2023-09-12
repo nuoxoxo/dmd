@@ -113,6 +113,7 @@ input:checked + .slider:before {
 
 @media only screen and (max-width: 768px) {
   body{font-size: 21px;}
-  h1{font-size: 1.5rem;}
+  button{width: $BTN-SIZE; height:$BTN-SIZE; font-size: 10px;}
+  h1{font-size: 1.8rem;}
 
 }
