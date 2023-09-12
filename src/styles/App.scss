@@ -1,6 +1,8 @@
 $GB: #000000;
 $TXT: #ffffff;
 $TXT-SIZE: 42px;
+$BTN-SIZE: 42px;
+$BTN-SIZE-05: calc($BTN-SIZE/2);
 
 @mixin FlexBody {
   display: flex;
@@ -27,12 +29,25 @@ input {
 
 .GuessingDiv {
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
 
+}
+
+.btn-group-div {
+  margin-top: $BTN-SIZE-05;
 }
 
 @media only screen and (max-width: 768px) {
   body{font-size: 21px;}
 }
 
-
+button {
+  margin: 3px;
+  // margin-right: 10px;
+  border-radius: 50%;
+  width: $BTN-SIZE;
+  border: none;
+  height: $BTN-SIZE;
+  user-select: none;
+  cursor:pointer;
+}
