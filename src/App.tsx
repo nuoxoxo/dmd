@@ -92,15 +92,16 @@ const App = () => {
           </button>
         ))}
         <button onClick={ handleReset }>Reset</button>
+        <button onClick={ handleSetLabelIsChecked }>Night</button>
       </div>
-      <label className="switch">
+      {/* <label className="switch">
         <input 
           type="checkbox"
           onChange={handleSetLabelIsChecked}
           checked={LabelIsChecked}
         />
         <span className="slider"></span>
-      </label>
+      </label> */}
     </>
   )
 }

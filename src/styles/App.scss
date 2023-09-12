@@ -46,7 +46,7 @@ input {
 }
 
 button {
-  margin: 7px 7px 12px 7px;
+  margin: 1px 7px 12px 7px;
   // margin-right: 10px;
   border-radius: 50%;
   width: $BTN-SIZE-BIG;
@@ -111,9 +111,9 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 666px) {
   body{font-size: 21px;}
-  button{width: $BTN-SIZE; height:$BTN-SIZE; font-size: 10px;}
-  h1{font-size: 1.8rem;}
+  button{/*width: $BTN-SIZE; height:$BTN-SIZE; */font-size: 10px;}
+  // h1{font-size: 1.8rem;}
 
 }
