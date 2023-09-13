@@ -109,7 +109,7 @@ const App = () => {
           </button>
         ))}
         <button onClick={ handleSetLabelIsChecked }>夜</button>
-        <button onClick={ handleReset }>Reset</button>
+        <button onClick={ handleReset }>↺</button>
         <button key={ '日' } onClick={() => handleButtonClick('日')}>日</button>
       </div>
       {/* <label className="switch">
