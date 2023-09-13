@@ -41,6 +41,7 @@ input {
 .btn-group-div {
   margin-top: $BTN-SIZE-05;
   display:flex;
+  flex-wrap:wrap;
   justify-content:center;
   align-items:center;
 }
