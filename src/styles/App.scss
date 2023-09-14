@@ -61,8 +61,8 @@ button {
   font-size: $TXT-SIZE-05;
   cursor:pointer;
   &:hover {
-    background-color: azure;
-    border: 1px solid cornflowerblue ;
+    background-color: cornflowerblue;
+    border: 3px solid darkorange;
   }
 }
 
