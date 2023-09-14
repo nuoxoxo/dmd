@@ -60,6 +60,10 @@ button {
   user-select: none;
   font-size: $TXT-SIZE-05;
   cursor:pointer;
+  &:hover {
+    background-color: azure;
+    border: 1px solid cornflowerblue ;
+  }
 }
 
 .switch {
