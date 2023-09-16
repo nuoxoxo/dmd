@@ -6,7 +6,7 @@ $BTN-SIZE: 42px;
 $BTN-SIZE-05: calc($BTN-SIZE/2);
 $BTN-SIZE-x2: calc($BTN-SIZE*2);
 
-$BTN-SIZE-BIG: 99px;
+$BTN-SIZE-BIG: 101px;
 
 @mixin FlexBody {
   display: flex;
