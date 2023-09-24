@@ -6,7 +6,7 @@ $BTN-SIZE: 42px;
 $BTN-SIZE-05: calc($BTN-SIZE/2);
 $BTN-SIZE-x2: calc($BTN-SIZE*2);
 
-$BTN-SIZE-BIG: 101px;
+$BTN-SIZE-BIG: 164px;
 
 @mixin FlexBody {
   display: flex;
@@ -135,7 +135,7 @@ input:checked + .slider:before {
 
 @media only screen and (max-width: 666px) {
   body{font-size: 21px;}
-  button{/*width: $BTN-SIZE; height:$BTN-SIZE; */font-size: $TXT-SIZE-05;}
+  button{width:101px; height:101px; font-size: $TXT-SIZE-05;}
   h1 {
     text-align: center;
     font-size: 2.6rem;
