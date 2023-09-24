@@ -10,7 +10,9 @@ $BTN-SIZE-BIG: 101px;
 
 @mixin FlexBody {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin GridBody {
@@ -41,7 +43,14 @@ input {
 .btn-group-div {
   margin-top: $BTN-SIZE-05;
   display:flex;
-  flex-wrap:wrap;
+  flex-direction: column;
+  // flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+}
+
+.btn-subgroup-div {
+  display:flex;
   justify-content:center;
   align-items:center;
 }
@@ -118,6 +127,10 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+}
+
+.QuestionDiv {
+  text-align: center;
 }
 
 @media only screen and (max-width: 666px) {
