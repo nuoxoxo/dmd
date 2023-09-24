@@ -103,14 +103,25 @@ const App = () => {
         {/* <div> { GuessRes } </div> */}
       </div>
       <div className='btn-group-div'>
-        {[1, 2, 3, 4, 5, 6/*, '日'*/].map((n) => (
-          <button key={ n } onClick={() => handleButtonClick(n)}>
-            {n}
-          </button>
-        ))}
-        <button onClick={ handleSetLabelIsChecked }>夜</button>
-        <button onClick={ handleReset }>↺</button>
-        <button key={ '日' } onClick={() => handleButtonClick('日')}>日</button>
+        <div className='btn-subgroup-div'>
+          {[1, 2, 3].map((n) => (
+            <button key={ n } onClick={() => handleButtonClick(n)}>
+              {n}
+            </button>
+          ))}
+        </div>
+        <div className='btn-subgroup-div'>
+          {[4, 5, 6/*, '日'*/].map((n) => (
+            <button key={ n } onClick={() => handleButtonClick(n)}>
+              {n}
+            </button>
+          ))}
+        </div>
+        <div className='btn-subgroup-div'>
+          <button onClick={ handleSetLabelIsChecked }>夜</button>
+          <button onClick={ handleReset }>↺</button>
+          <button key={ '日' } onClick={() => handleButtonClick('日')}>日</button>
+        </div>
       </div>
       {/* <label className="switch">
         <input 
