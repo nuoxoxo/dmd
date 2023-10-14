@@ -3,12 +3,16 @@ import './styles/App.scss'
 import { GetRandomDateString } from "./helpers/Helpers"
 
 const App = () => {
+
   const [RandomDateArray, setRandomDateString] = 
     useState<[number, string, number, number]>(GetRandomDateString())
-  const [GuessVal, setGuessVal] = useState</*number | */string>('')
-  // const [GuessRes, setGuessRes] = useState<string>('')
-  const [GuessRes, setGuessRes] = useState<boolean | null>(null)
 
+  const [GuessVal, setGuessVal] = 
+    useState</*number | */string>('')
+  // const [GuessRes, setGuessRes] = useState<string>('')
+
+  const [GuessRes, setGuessRes] = 
+    useState<boolean | null>(null)
 
   const temp = localStorage.getItem("LabelIsChecked");
   const tempLabelIsChecked = temp ? JSON.parse(temp) : false;
@@ -85,12 +89,9 @@ const App = () => {
       document.body.style.color = LabelIsChecked ? 'black' : 'white';
     }
 
-    
-
     localStorage.setItem("LabelIsChecked", JSON.stringify(LabelIsChecked))
   }, [GuessRes, GuessVal, LabelIsChecked])
   
-
   return (
     <>
       <h1 className='QuestionDiv'>
