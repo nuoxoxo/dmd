@@ -9,11 +9,6 @@ export const GetRandomDateString = (): [number, string, number, number] => {
     "July", "August", "September", 
     "October", "November", "December"
   ]
-  // const WeekDays = [
-  //   'Sunday', 'Monday', 'Tuesday', 
-  //   'Wednesday', 'Thursday', 'Friday', 'Saturday'
-  // ]
-  // console.log(RandomTime)
 
   return [
     RandomTime.getDay(),
