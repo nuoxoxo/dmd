@@ -7,12 +7,9 @@ const App = () => {
   const [RandomDateArray, setRandomDateString] = 
     useState<[number, string, number, number]>(GetRandomDateString())
 
-  const [GuessVal, setGuessVal] = 
-    useState</*number | */string>('')
-  // const [GuessRes, setGuessRes] = useState<string>('')
+  const [GuessVal, setGuessVal] = useState</*number | */string>('')
 
-  const [GuessRes, setGuessRes] = 
-    useState<boolean | null>(null)
+  const [GuessRes, setGuessRes] = useState<boolean | null>(null)
 
   const temp = localStorage.getItem("LabelIsChecked");
   const tempLabelIsChecked = temp ? JSON.parse(temp) : false;
